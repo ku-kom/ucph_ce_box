@@ -1,0 +1,24 @@
+{
+    "name": "university-of-copenhagen/ucph-ce-box",
+    "type": "typo3-cms-extension",
+    "description": "UCPH TYPO3 content element \"Box\"",
+    "authors": [{
+        "name": "Nanna Ellegaard",
+        "role": "Developer"
+    }],
+    "homepage": "https://www.ku.dk/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "UniversityOfCopenhagen\\UcphCeBox\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ucph_ce_box"
+        }
+    }
+}

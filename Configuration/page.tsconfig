@@ -1,0 +1,33 @@
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "common"
+  common {
+    elements {
+      ucph_ce_box {
+        iconIdentifier = content-text
+        title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
+        description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
+        tt_content_defValues {
+          CType = ucph_ce_box
+        }
+      }
+    }
+    show := addToList(ucph_ce_box)
+  }
+}
+
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "Text"
+  text {
+    elements {
+      ucph_ce_box {
+        iconIdentifier = content-text
+        title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
+        description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
+        tt_content_defValues {
+          CType = ucph_ce_box
+        }
+      }
+    }
+    show := addToList(ucph_ce_box)
+  }
+}

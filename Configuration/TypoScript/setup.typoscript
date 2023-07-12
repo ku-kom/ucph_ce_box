@@ -1,0 +1,25 @@
+tt_content.ucph_ce_box >
+# CTYPE: Text
+
+tt_content.ucph_ce_box =< lib.contentElement
+tt_content.ucph_ce_box {
+	templateName = Box
+	templateRootPaths {
+        103 = EXT:ucph_ce_box/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        103 = EXT:ucph_ce_box/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        103 = EXT:ucph_ce_box/Resources/Private/Layouts/
+    }
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = image
+            folders.field = file_folder
+            sorting.field = filelink_sorting
+            as = images
+        }
+    }
+}
