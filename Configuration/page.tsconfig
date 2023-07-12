@@ -3,7 +3,7 @@ mod.wizards.newContentElement.wizardItems {
   common {
     elements {
       ucph_ce_box {
-        iconIdentifier = content-text
+        iconIdentifier = ucph_ce_box_icon
         title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
         description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
         tt_content_defValues {
@@ -20,7 +20,24 @@ mod.wizards.newContentElement.wizardItems {
   text {
     elements {
       ucph_ce_box {
-        iconIdentifier = content-text
+        iconIdentifier = ucph_ce_box_icon
+        title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
+        description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
+        tt_content_defValues {
+          CType = ucph_ce_box
+        }
+      }
+    }
+    show := addToList(ucph_ce_box)
+  }
+}
+
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "Image"
+  image {
+    elements {
+      ucph_ce_box {
+        iconIdentifier = ucph_ce_box_icon
         title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
         description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
         tt_content_defValues {

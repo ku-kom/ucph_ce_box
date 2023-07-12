@@ -13,7 +13,10 @@
             <source>A flexible box element with image and text.</source>
         </trans-unit>
         <trans-unit id="ucph_ce_box_header">
-            <source>Header</source>
+            <source>Internal name (not visible in the frontend)</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_box_link">
+            <source>Bok link</source>
         </trans-unit>
         </body>
     </file>
