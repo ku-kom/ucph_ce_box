@@ -1,0 +1,13 @@
+TCEFORM {
+    tt_content {
+        # cType ucph_ce_box:
+        # Hide row color
+        tx_ucph_ce_background_color {
+            types {
+                ucph_ce_box {
+                    disabled = 1
+                }
+            }
+        }
+    }
+}

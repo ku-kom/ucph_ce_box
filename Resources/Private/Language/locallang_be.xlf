@@ -13,10 +13,43 @@
             <source>A flexible box element with image and text.</source>
         </trans-unit>
         <trans-unit id="ucph_ce_box_header">
-            <source>Internal name (not visible in the frontend)</source>
+            <source>Box heading</source>
         </trans-unit>
         <trans-unit id="ucph_ce_box_link">
-            <source>Bok link</source>
+            <source>Box link</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_box_text">
+            <source>Box text</source>
+        </trans-unit>
+        <trans-unit id="ucph_ce_box_color">
+            <source>Box background color</source>
+        </trans-unit>
+        <trans-unit id="color_none">
+            <source>None</source>
+        </trans-unit>
+        <trans-unit id="color_1">
+            <source>Primary color</source>
+        </trans-unit>
+        <trans-unit id="color_2">
+            <source>Secondary color 1</source>
+        </trans-unit>
+        <trans-unit id="color_3">
+            <source>Secondary color 2</source>
+        </trans-unit>
+        <trans-unit id="color_4">
+            <source>Tertiary color 1</source>
+        </trans-unit>
+        <trans-unit id="color_5">
+            <source>Tertiary color 2</source>
+        </trans-unit>
+        <trans-unit id="color_6">
+            <source>Tertiary color 3</source>
+        </trans-unit>
+        <trans-unit id="color_7">
+            <source>KU red</source>
+        </trans-unit>
+        <trans-unit id="color_8">
+            <source>KU grey</source>
         </trans-unit>
         </body>
     </file>
