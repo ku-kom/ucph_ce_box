@@ -19,7 +19,7 @@
                 <f:then>
                     <f:for each="{images}" as="image">
                         <figure class="image">
-                            <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" />
+                            <f:image image="{image}" alt="{image.alternative}" />
                             <f:if condition="{image.description}">
                                 <figcaption>{image.description}</figcaption>
                             </f:if>
