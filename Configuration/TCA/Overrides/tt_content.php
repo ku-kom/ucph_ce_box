@@ -4,7 +4,7 @@
  * This file is part of the package ucph_ce_box.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
- * June 2023 Nanna Ellegaard, University of Copenhagen.
+ * June 2023, University of Copenhagen.
  */
 declare(strict_types=1);
 defined('TYPO3') or die();
@@ -32,9 +32,9 @@ call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
     // Configure the default backend fields for the content element
     $GLOBALS['TCA']['tt_content']['types'][$contentType] = [
         'showitem' => '
-            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                --palette--;;general,
-                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_header,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
                 bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_text,image,
                 box_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_link,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -57,6 +57,7 @@ call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
                     'cols' => 30,
                     'rows' => 10,
                     'max' => 100,
+                    'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_text_placeholder',
                     'eval' => 'trim'
                 ],
             ],
@@ -123,27 +124,6 @@ call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
                     'softref' => 'typolink'
                 ]
             ],
-            // 'quote_alignment' => [
-            //     'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment',
-            //     'config' => [
-            //         'type' => 'select',
-            //         'renderType' => 'selectSingle',
-            //         'items' => [
-            //             [
-            //                 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment_left', '', 'EXT:'.$extKey.'/Resources/Public/Icons/justify-left.svg'
-            //             ],
-            //             [
-            //                 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment_center',
-            //                 'text-center', 'EXT:'.$extKey.'/Resources/Public/Icons/justify.svg'
-            //             ],
-            //             [
-            //                 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_quote_alignment_right',
-            //                 'text-end', 'EXT:'.$extKey.'/Resources/Public/Icons/justify-right.svg'
-            //             ]
-            //         ],
-            //     ],
-            //     'default' => '',
-            // ],
         ]
     );
 });

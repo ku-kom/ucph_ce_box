@@ -1,11 +1,19 @@
 TCEFORM {
     tt_content {
         # cType ucph_ce_box:
-        # Hide row color
-        tx_ucph_ce_background_color {
+        header_layout {
             types {
                 ucph_ce_box {
                     disabled = 1
+                }
+            }
+        }
+
+        header {
+            // Rename header
+            types {
+                ucph_ce_box {
+                    label = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_header
                 }
             }
         }
