@@ -2,16 +2,16 @@ mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "common"
   common {
     elements {
-      ucph_ce_box {
-        iconIdentifier = ucph_ce_box_icon
-        title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
-        description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
+      ucph_content_box {
+        iconIdentifier = ucph_content_box_icon
+        title = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_title
+        description = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_desc
         tt_content_defValues {
-          CType = ucph_ce_box
+          CType = ucph_content_box
         }
       }
     }
-    show := addToList(ucph_ce_box)
+    show := addToList(ucph_content_box)
   }
 }
 
@@ -19,16 +19,16 @@ mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "Text"
   text {
     elements {
-      ucph_ce_box {
-        iconIdentifier = ucph_ce_box_icon
-        title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
-        description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
+      ucph_content_box {
+        iconIdentifier = ucph_content_box_icon
+        title = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_title
+        description = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_desc
         tt_content_defValues {
-          CType = ucph_ce_box
+          CType = ucph_content_box
         }
       }
     }
-    show := addToList(ucph_ce_box)
+    show := addToList(ucph_content_box)
   }
 }
 
@@ -36,15 +36,15 @@ mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "Image"
   image {
     elements {
-      ucph_ce_box {
-        iconIdentifier = ucph_ce_box_icon
-        title = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title
-        description = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_desc
+      ucph_content_box {
+        iconIdentifier = ucph_content_box_icon
+        title = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_title
+        description = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_desc
         tt_content_defValues {
-          CType = ucph_ce_box
+          CType = ucph_content_box
         }
       }
     }
-    show := addToList(ucph_ce_box)
+    show := addToList(ucph_content_box)
   }
 }

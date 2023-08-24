@@ -1,5 +1,5 @@
 #
-# SQL definition of database tables for extension 'ucph_ce_box'
+# SQL definition of database tables for extension 'ucph_content_box'
 #
 --
 -- Table structure for table 'tt_content'

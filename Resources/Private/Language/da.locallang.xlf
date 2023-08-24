@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" target-language="da" datatype="plaintext" original="EXT:ucph_ce_box/Resources/Private/Language/locallang.xlf" date="2023-06-14T10:27:00Z" product-name="ucph_ce_box">
+    <file source-language="en" target-language="da" datatype="plaintext" original="EXT:ucph_content_box/Resources/Private/Language/locallang.xlf" date="2023-06-14T10:27:00Z" product-name="ucph_content_box">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>

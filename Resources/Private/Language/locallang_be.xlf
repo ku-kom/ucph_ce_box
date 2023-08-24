@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_ce_box">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_content_box">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-        <trans-unit id="ucph_ce_box_title">
+        <trans-unit id="ucph_content_box_title">
             <source>Box element</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_box_desc">
+        <trans-unit id="ucph_content_box_desc">
             <source>A flexible box element with image and text.</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_box_header">
+        <trans-unit id="ucph_content_box_header">
             <source>Internal title - not displayed in the frontend</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_box_link">
+        <trans-unit id="ucph_content_box_link">
             <source>Box link</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_box_text">
+        <trans-unit id="ucph_content_box_text">
             <source>Box text</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_box_text_placeholder">
+        <trans-unit id="ucph_content_box_text_placeholder">
             <source>Add box text</source>
         </trans-unit>
         </body>

@@ -1,9 +1,9 @@
 TCEFORM {
     tt_content {
-        # cType ucph_ce_box:
+        # cType ucph_content_box:
         header_layout {
             types {
-                ucph_ce_box {
+                ucph_content_box {
                     disabled = 1
                 }
             }
@@ -12,8 +12,8 @@ TCEFORM {
         header {
             // Rename header
             types {
-                ucph_ce_box {
-                    label = LLL:EXT:ucph_ce_box/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_header
+                ucph_content_box {
+                    label = LLL:EXT:ucph_content_box/Resources/Private/Language/locallang_be.xlf:ucph_content_box_header
                 }
             }
         }

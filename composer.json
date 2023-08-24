@@ -1,5 +1,5 @@
 {
-    "name": "university-of-copenhagen/ucph-ce-box",
+    "name": "university-of-copenhagen/ucph-content-box",
     "type": "typo3-cms-extension",
     "description": "UCPH TYPO3 content element \"Box\"",
     "authors": [{
@@ -13,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "UniversityOfCopenhagen\\UcphCeBox\\": "Classes/"
+            "UniversityOfCopenhagen\\UcphContentBox\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "ucph_ce_box"
+            "extension-key": "ucph_content_box"
         }
     }
 }

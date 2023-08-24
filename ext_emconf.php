@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Extension Manager/Repository config file for ext "ucph_ce_box".
+ * Extension Manager/Repository config file for ext "ucph_content_box".
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'UCPH TYPO3 content element "Box"',
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'UniversityOfCopenhagen\\UcphCeBox\\' => 'Classes',
+            'UniversityOfCopenhagen\\UcphContentBox\\' => 'Classes',
         ],
     ],
     'state' => 'stable',

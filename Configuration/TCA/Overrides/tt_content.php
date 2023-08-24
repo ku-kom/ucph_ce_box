@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_ce_box.
+ * This file is part of the package ucph_content_box.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * June 2023, University of Copenhagen.
@@ -9,16 +9,16 @@
 declare(strict_types=1);
 defined('TYPO3') or die();
 
-call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
+call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_content_box') {
     // Adds the content element to the "Type" dropdown
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
         [
-            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_title',
+            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_title',
             $contentType,
             // icon identifier
-            'ucph_ce_box_icon',
+            'ucph_content_box_icon',
         ],
         'ucph_cardgroup',
         'before'
@@ -35,8 +35,8 @@ call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
-                bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_text,image,
-                box_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_link,
+                bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_text,image,
+                box_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_link,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -57,7 +57,7 @@ call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
                     'cols' => 30,
                     'rows' => 10,
                     'max' => 100,
-                    'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_text_placeholder',
+                    'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_text_placeholder',
                     'eval' => 'trim'
                 ],
             ],
@@ -107,7 +107,7 @@ call_user_func(function ($extKey ='ucph_ce_box', $contentType ='ucph_ce_box') {
         [
             'box_link' => [
                 'exclude' => true,
-                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_box_link',
+                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_link',
                 'config' => [
                     'type' => 'input',
                     'renderType' => 'inputLink',
