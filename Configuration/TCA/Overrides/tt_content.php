@@ -36,7 +36,7 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
                 bodytext;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_text,image,
-                box_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_link,
+                ucph_content_box_link;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_link,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -105,7 +105,7 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
     $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
         $GLOBALS['TCA']['tt_content']['columns'],
         [
-            'box_link' => [
+            'ucph_content_box_link' => [
                 'exclude' => true,
                 'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_link',
                 'config' => [

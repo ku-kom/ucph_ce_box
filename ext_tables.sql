@@ -5,5 +5,5 @@
 -- Table structure for table 'tt_content'
 --
 CREATE TABLE tt_content (
-    box_link varchar(1024) DEFAULT '' NOT NULL
+    ucph_content_box_link varchar(1024) DEFAULT '' NOT NULL
 );
