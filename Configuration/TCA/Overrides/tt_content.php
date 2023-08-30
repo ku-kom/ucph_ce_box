@@ -30,7 +30,9 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
     }
 
     // Configure the default backend fields for the content element
-    $GLOBALS['TCA']['tt_content']['types'][$contentType] = [
+    $GLOBALS['TCA']['tt_content']['types'][$contentType] = array_replace_recursive(
+        $GLOBALS['TCA']['tt_content']['types'][$contentType],
+        [
         'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
@@ -40,66 +42,67 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
-           --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-                --palette--;;language,
-           --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-                --palette--;;hidden,
-               --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
-           --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
-                categories,
-           --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
-                rowDescription,
-           --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-         ',
-        'columnsOverrides' => [
-            'bodytext' => [
-                'config' => [
-                    'cols' => 30,
-                    'rows' => 10,
-                    'max' => 100,
-                    'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_text_placeholder',
-                    'eval' => 'trim'
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+                        --palette--;;language,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+                        --palette--;;hidden,
+                    --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+                        categories,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
+                        rowDescription,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
+            ',
+            'columnsOverrides' => [
+                'bodytext' => [
+                    'config' => [
+                        'cols' => 30,
+                        'rows' => 10,
+                        'max' => 100,
+                        'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_text_placeholder',
+                        'eval' => 'trim'
+                    ],
                 ],
-            ],
-            'image' => [
-                'config' => [
-                    'maxitems' => 1,
-                    'appearance' => [
-                        'elementBrowserType' => 'file',
-                        'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
-                    ],
-                    'filter' => [
-                        0 => [
-                            'parameters' => [
-                                'allowedFileExtensions' => 'jpg,jpeg,png,svg',
-                            ],
+                'image' => [
+                    'config' => [
+                        'maxitems' => 1,
+                        'appearance' => [
+                            'elementBrowserType' => 'file',
+                            'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
                         ],
-                    ],
-                    'overrideChildTca' => [
-                        'columns' => [
-                            'uid_local' => [
-                                'config' => [
-                                    'appearance' => [
-                                        'elementBrowserAllowed' => 'jpg,jpeg,png,svg',
-                                    ],
+                        'filter' => [
+                            0 => [
+                                'parameters' => [
+                                    'allowedFileExtensions' => 'jpg,jpeg,png,svg',
                                 ],
                             ],
-                            'alternative' => [
-                                'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_alt'
-                            ]
                         ],
-                        'types' => [
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                                'showitem' => '
-                                alternative,description,--linebreak--,crop,
-                                --palette--;;filePalette'
-                            ]
+                        'overrideChildTca' => [
+                            'columns' => [
+                                'uid_local' => [
+                                    'config' => [
+                                        'appearance' => [
+                                            'elementBrowserAllowed' => 'jpg,jpeg,png,svg',
+                                        ],
+                                    ],
+                                ],
+                                'alternative' => [
+                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_alt'
+                                ]
+                            ],
+                            'types' => [
+                                \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                                    'showitem' => '
+                                    alternative,description,--linebreak--,crop,
+                                    --palette--;;filePalette'
+                                ]
+                            ],
                         ],
                     ],
                 ],
             ],
-        ],
-    ];
+        ]
+    );
 
     // Register additional fields
     $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
