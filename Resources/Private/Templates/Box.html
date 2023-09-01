@@ -1,9 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
-    <f:if condition="{data.box_link}">
+    <f:if condition="{data.ucph_content_box_link}">
         <f:then>
-            <f:link.typolink parameter="{data.box_link}" class="box-link">
+            <f:link.typolink parameter="{data.ucph_content_box_link}" class="box-link">
                 <f:render section="BoxContent" arguments="{_all}" />
             </f:link.typolink>
         </f:then>
