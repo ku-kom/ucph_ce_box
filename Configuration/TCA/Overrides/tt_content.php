@@ -58,7 +58,7 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
                     'config' => [
                         'cols' => 30,
                         'rows' => 10,
-                        'max' => 100,
+                        'max' => 250,
                         'placeholder' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_box_text_placeholder',
                         'eval' => 'trim'
                     ],

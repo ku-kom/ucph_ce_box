@@ -13,20 +13,18 @@
     </f:if>
 </f:section>
 <f:section name="BoxContent">
-    <div class="box">
+    <div class="box subset-color-2">
         <f:if condition="{images}">
-            <div class="box-img">
-                <f:then>
+            <f:then>
+                <div class="box-img">
                     <f:for each="{images}" as="image">
-                        <figure class="image">
-                            <f:image image="{image}" alt="{image.alternative}" />
-                            <f:if condition="{image.description}">
-                                <figcaption>{image.description}</figcaption>
-                            </f:if>
-                        </figure>
+                        <f:image image="{image}" alt="{image.alternative}" />
+                        <f:if condition="{image.description}">
+                            <figcaption>{image.description}</figcaption>
+                        </f:if>
                     </f:for>
-                </f:then>
-            </div>
+                </div>
+            </f:then>
         </f:if>
         <div class="box-text">
             <f:format.html>{data.bodytext}</f:format.html>
