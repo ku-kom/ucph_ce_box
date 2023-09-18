@@ -19,7 +19,7 @@
 
 .box-text {
     @include padding(calc(var(--bs-gutter-x) * 0.5));
-    padding-right: 2.5rem;
+    padding-bottom: 2.9rem;
 }
 
 .box-link {
@@ -42,6 +42,7 @@
             bottom: 1rem;
             right: 1rem;
             position: absolute;
+            line-height: normal;
         }
     }
 }
