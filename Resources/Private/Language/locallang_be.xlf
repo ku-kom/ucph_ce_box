@@ -10,7 +10,7 @@
             <source>Box element</source>
         </trans-unit>
         <trans-unit id="ucph_content_box_desc">
-            <source>A flexible box element with image and text.</source>
+            <source>A flexible box element with text and optional image.</source>
         </trans-unit>
         <trans-unit id="ucph_content_box_header">
             <source>Internal title - not displayed in the frontend</source>
