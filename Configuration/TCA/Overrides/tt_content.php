@@ -68,12 +68,12 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
                         'maxitems' => 1,
                         'appearance' => [
                             'elementBrowserType' => 'file',
-                            'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                            'elementBrowserAllowed' => 'jpg,jpeg,png'
                         ],
                         'filter' => [
                             0 => [
                                 'parameters' => [
-                                    'allowedFileExtensions' => 'jpg,jpeg,png,svg',
+                                    'allowedFileExtensions' => 'jpg,jpeg,png',
                                 ],
                             ],
                         ],
@@ -82,7 +82,7 @@ call_user_func(function ($extKey ='ucph_content_box', $contentType ='ucph_conten
                                 'uid_local' => [
                                     'config' => [
                                         'appearance' => [
-                                            'elementBrowserAllowed' => 'jpg,jpeg,png,svg',
+                                            'elementBrowserAllowed' => 'jpg,jpeg,png',
                                         ],
                                     ],
                                 ],
