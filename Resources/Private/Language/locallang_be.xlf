@@ -24,6 +24,39 @@
         <trans-unit id="ucph_content_box_text_placeholder">
             <source>Add box text</source>
         </trans-unit>
+        <trans-unit id="ucph_content_box_alt">
+            <source>Optional: Keep empty for decorative images</source>
+        </trans-unit>
+        <trans-unit id="option.extrasmall">
+            <source>Extra Small</source>
+        </trans-unit>
+        <trans-unit id="option.small">
+            <source>Small</source>
+        </trans-unit>
+        <trans-unit id="option.medium">
+            <source>Medium</source>
+        </trans-unit>
+        <trans-unit id="option.xlarge">
+            <source>Extra Large</source>
+        </trans-unit>
+        <trans-unit id="option.large">
+            <source>Large</source>
+        </trans-unit>
+        <trans-unit id="option.default">
+            <source>Default</source>
+        </trans-unit>
+        <trans-unit id="ratio.16_9">
+            <source>16:9</source>
+        </trans-unit>
+        <trans-unit id="ratio.4_3">
+            <source>4:3</source>
+        </trans-unit>
+        <trans-unit id="ratio.1_1">
+            <source>1:1</source>
+        </trans-unit>
+        <trans-unit id="ratio.free">
+            <source>Free</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

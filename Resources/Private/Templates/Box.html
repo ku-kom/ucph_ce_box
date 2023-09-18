@@ -18,10 +18,14 @@
             <f:then>
                 <div class="box-img">
                     <f:for each="{images}" as="image">
-                        <f:image image="{image}" alt="{image.alternative}" />
-                        <f:if condition="{image.description}">
-                            <figcaption>{image.description}</figcaption>
-                        </f:if>
+                        <picture>
+                            <source srcset="{f:uri.image(image:image, width:'1400', cropVariant: 'xlarge')}" media="(min-width: 1400px)" />
+                            <source srcset="{f:uri.image(image:image, width:'1200', cropVariant: 'large')}" media="(min-width: 1200px)" />
+                            <source srcset="{f:uri.image(image:image, width:'992', cropVariant: 'medium')}" media="(min-width: 992px)" />
+                            <source srcset="{f:uri.image(image:image, width:'768', cropVariant: 'small')}" media="(min-width: 768px)" />
+                            <source srcset="{f:uri.image(image:image, width:'620', cropVariant: 'xsmall')}" media="(min-width: 0px)" />
+                            <img class="img-responsive" src="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: settings.maxImgWidth, cropVariant: 'default')}" alt="{image.alternative}" />
+                        </picture>
                     </f:for>
                 </div>
             </f:then>
